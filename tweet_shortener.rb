@@ -56,4 +56,5 @@ def shortened_tweet_truncator tweet
   new_tweet = word_substituter(selective_tweet_shortener(tweet))
   new_tweet
 end
-  
+
+puts shortened_tweet_truncator tweet1
