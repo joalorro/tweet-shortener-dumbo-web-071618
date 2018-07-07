@@ -53,7 +53,7 @@ def selective_tweet_shortener tweet
 end
 
 def shortened_tweet_truncator tweet
-  new_tweet = word_substituter(selective_tweet_shortener(tweet))
+  new_tweet = selective_tweet_shortener(word_substituter(tweet))
   new_tweet
 end
 
