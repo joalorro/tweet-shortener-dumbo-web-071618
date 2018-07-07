@@ -36,12 +36,12 @@ end
 def bulk_tweet_shortener tweet_array
   new_tweet_array = []
   i = 0
+  new_tweet = ""
   tweet_array.each do |tweet|
-    new_tweet_array << word_substituter(tweet)
-    puts new_tweet_array[i]
-    i += 1
+    new_tweet = word_substituter(tweet)
+    new_tweet_array << new_tweet
+    puts new_tweet
   end
-  
 end
 
 bulk_tweet_shortener array_of_tweets
