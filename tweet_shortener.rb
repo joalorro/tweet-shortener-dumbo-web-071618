@@ -5,6 +5,8 @@ array_of_tweets = [
   "OMG you guys, you won't believe how sweet my kitten is. My kitten is like super cuddly and too cute to be believed right?",
   "I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real."
   ]
+  
+tweet1 = "Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!"
 
 def dictionary 
   replacements = {
@@ -44,6 +46,10 @@ def bulk_tweet_shortener tweet_array
 end
 
 def selective_tweet_shortener tweet 
-  if tweet.length > 140
-    
+  if tweet.size > 140
+    tweet = tweet.size(0,140)
+  end
+  tweet
 end
+
+puts selective_tweet_shortener tweet1
