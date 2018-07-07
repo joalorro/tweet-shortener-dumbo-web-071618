@@ -47,7 +47,7 @@ end
 
 def selective_tweet_shortener tweet 
   if tweet.size > 140
-    tweet = tweet.size(0,140)
+    tweet = tweet.slice(0,140)
   end
   tweet
 end
