@@ -42,3 +42,4 @@ def bulk_tweet_shortener tweet_array
   
 end
 
+bulk_tweet_shortener array_of_tweets
