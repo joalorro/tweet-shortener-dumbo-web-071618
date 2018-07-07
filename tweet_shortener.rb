@@ -28,7 +28,7 @@ def word_substituter tweet
   
   tweet.each do |words|
     if replacements.has_key?(words.downcase) == true 
-      words = replacements[words]
+      words = replacements[words.downcase]
     end
     new_tweet << words
   end
